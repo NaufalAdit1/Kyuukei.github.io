@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Blog - Kyuukei website</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<style>
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		.blog-img {
+			width: 300px; 
+			height: auto; 
+		}
+		#greeting {
+			font-size: 20px; 
+			color: #333; 
+			margin: 20px 0;
+		}
+	</style>
+	<script>
+		function displayGreeting() {
+			var userName = document.getElementById('user-name').value;
+			var greetingDiv = document.getElementById('greeting');
+			greetingDiv.innerHTML = 'Hello, ' + userName + '! Welcome to our website!';
+		}
+
+		function changeBackgroundColor() {
+			var color = document.getElementById('background-color').value;
+			document.body.style.backgroundColor = color;
+		}
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div class="header">
+			<ul>
+				<li>
+					<a href="index.html">home</a>
+				</li>
+				<li>
+					<a href="about.html">about</a>
+				</li>
+				<li class="selected">
+					<a href="blog.html">blog</a>
+				</li>
+				<li>
+					<a href="shows.html">shows</a>
+				</li>
+			</ul>
+			<form action="index.html">
+				<input type="text" name="email" id="email" value="Enter e-mail address">
+				<input type="submit" name="submit" id="submit" value="">
+			</form>
+		</div>
+		<div class="body">
+			<a href="index.html" class="logo"><img src="images/58aff1e7829958a978a4a6ce.png" alt=""></a>
+			<p>
+				Not just a usual band, this is the real rock band!
+			</p>
+			<a class="download" href="#">download our album now!</a>
+		</div>
+		<div class="footer">
+			<p>
+				Kyuukei is a rock band based in Tokyo</a> for you, we create music that can be listened whenever you want to.
+			</p>
+			<a href="http://www.freewebsitetemplates.com/">-Love</a>
+		</div>
+	</div>
+	<div id="body">
+		<div class="content">
+			<h2>JS</h2>
+			
+			<div id="greeting"></div>
+
+			
+			<div>
+				<h3>Enter Your Name</h3>
+				<input type="text" id="user-name" placeholder="Enter your name">
+				<button onclick="displayGreeting()">Submit</button>
+			</div>
+
+		
+			<div>
+				<h3>Change Background Color</h3>
+				<input type="text" id="background-color" placeholder="Enter a color (e.g., 'red', '#00ff00')">
+				<button onclick="changeBackgroundColor()">Change Color</button>
+			</div>
+
+	</div>
+	<div id="body">
+		<div class="content">
+			<a href="#"><img src="images/mosh.png" alt=""></a>
+			<p>
+			HI!
+		We are rock band from Japan! please see our information, shows, and blogs! 
+		see you in our shows!
+	
+			</p>
+		</div>
+	<div id="body">
+		<div class="content">
+			<a href="#"><img src="images/scary.jpg" alt=""></a> <b>Kyuukei is a rock band!</b>
+			<p>
+				We want to perform in many shows across the world! Fell free to support us and be part of the journey!
+			</p>
+		</div>
+		<div class="sidebar">
+			<div>
+				<h3>shows</h3>
+				<ul>
+					<li>
+						<a href="shows.html">August 1st, 2024&nbsp;&nbsp;-&nbsp;&nbsp;<b>Saitama, Japan</b></a>
+					</li>
+				</ul>
+			</div>
+			<div class="album">
+				<h3>album</h3>
+				<a href="#"><img src="images/flower.jpg" alt=""></a> <span>Latest Album 2024 - Mp3, WAV, TIFF</span>
+			</div>
+			<div class="connect">
+				<h3>social</h3>
+				<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
+				<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
+				<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>
+			&copy;Muhammad Naufal Aditya s23229577. <a href="index.html">Kyuukei</a> all rights reserved
+		</p>
+	</div>
+</body>
+</html>
